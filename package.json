@@ -1,0 +1,15 @@
+{
+  "name": "supertest-rest",
+  "version": "1.0.0",
+  "description": "supertest-rest is http api test framework and base on supertest, especially for REST architectural api",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "hcnode",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^3.9.3",
+    "supertest": "^1.0.1"
+  }
+}
