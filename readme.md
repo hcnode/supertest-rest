@@ -43,6 +43,7 @@ test cases object can be like sample bellow:
 
 **Example**
 
+[test/test.js](https://github.com/hcnode/supertest-rest/blob/master/test/test.js)
 
 **中文说明**
 
