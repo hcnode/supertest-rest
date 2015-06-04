@@ -9,6 +9,10 @@
 **Test**
 
     mocha
+  
+**Example**
+
+[test/test.js](https://github.com/hcnode/supertest-rest/blob/master/test/test.js)
 
 **Usage**
 
@@ -38,21 +42,15 @@ test cases object can be like sample bellow:
  - name : name of the test case
  - put : the key is method of http request, value is the path of the api
  - body : the body of the request when the method is post or put
- - assert : the function will be called after receive the response, you can put some assert codes here to assert the body or header in the response object as you expected as well
+ - assert : the function will be called after receive the response, you can put some assert codes here to assert the body or header in the response object as you expected
  - bindId : Array of the other test cases name, which provide the id that will be replace the "{{id}}" in this case's path, and the id is obtained from the response object that from bindId's test case
 
-**Example**
-
-[test/test.js](https://github.com/hcnode/supertest-rest/blob/master/test/test.js)
-
 **中文说明**
-
-参数说明
 
 
  - name : 测试用例的名称
  - put ： key是http请求的method，值是请求的path
- - body ：post活着put请求的body
+ - body ：post或者put请求的body
  - assert：http请求返回后的调用，传入的res参数，可以在assert语句中判断body或者header是否符合预期
  - bindId：其他测试用例的name，用来替换path中的id，通常是在其他测试用例的response body里面获取的id属性
 
